@@ -1,0 +1,71 @@
+// 引入common样式
+@import "../../scss/common.scss";
+@import "../../scss/theme.scss";
+.transform {
+    display: flex;
+}
+.container {
+    flex: 1;
+    margin-top: 10px;
+    .label {
+        color: $normalTextColor;
+        font-size: 16px;
+        font-weight: 600;
+        span {
+            font-weight: normal;
+            float: right;
+            font-size: 14px;
+            em {
+                font-weight: 600;
+                font-style: normal;
+            }
+        }
+    }
+    .content {
+        $bordStyle: 1px solid var(--border-color);
+        margin-top: 12px;
+        border-radius: 5px;
+        color: #929eaa;
+        height:70px;
+        line-height: 70px;
+        display: flex;
+        padding-left: 12px;
+        &.light {
+            @extend %select-amount-light-theme;
+        }
+        &.dark {
+            @extend %select-amount-dark-theme;
+        }
+        border: 1px solid var(--border-color);
+        box-sizing: border-box;
+        overflow: hidden;
+        .icon {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            top: 14px;
+        }
+        .input {
+            margin-left: 12px;
+            border: none;
+            border-left: $bordStyle;
+            padding-left: 12px;
+            flex: 1;
+            background-color: transparent;
+            font-size: 16px;
+            color: var(--text-color);
+            &:focus {
+                outline: none;
+            }
+        }
+        .atom {
+            color: var(--text-color);
+        }
+        .tip {
+            margin-left: 5px;
+            font-size: 13px;
+            padding-right: 8px;
+        }
+    }
+}
+

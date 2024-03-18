@@ -1,0 +1,23 @@
+@import '../../scss/theme.scss';
+.light {
+    @extend %tip-light-theme;
+}
+.dark {
+    @extend %tip-dark-theme;
+}
+.tip {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin-left: 5px;
+    font-size: 13px;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 8px;
+    border-radius: 3px;
+}
+.group {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

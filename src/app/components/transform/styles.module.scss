@@ -1,0 +1,55 @@
+// 引入common样式
+@import "../../scss/common.scss";
+@import "../../scss/theme.scss";
+.arrow {
+    // 实现一个箭头
+    width: 17px;
+    height: 17px;
+    display: block;
+    margin: 50px 10px 0;
+}
+.transform {
+    display: flex;
+}
+.item {
+    flex: 1;
+    .label {
+        color: $normalTextColor;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .content {
+        &.light {
+            @extend %transform-light-theme;
+        }
+        &.dark {
+            @extend %transform-dark-theme;
+        }
+        margin-top: 12px;
+        background-color: var(--background-color);
+        border-radius: 5px;
+        color: #929eaa;
+        height: 60px;
+        line-height: 60px;
+        display: flex;
+        padding-left: 10px;
+        .icon {
+            width: 32px;
+            height: 32px;
+            position: relative;
+            top: 14px;
+        }
+        .text {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+    .tail {
+        width: 18px;
+        height: 15px;
+        display: block;
+        margin-top: 22px;
+        margin-left: 8px;
+    }
+}
+

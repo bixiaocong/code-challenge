@@ -1,0 +1,51 @@
+@import '../../scss/theme.scss';
+.icon {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: var(--text-color);
+    left: 15px;
+    top: 11px;
+    @mixin icon-before-after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: var(--text-color);
+    }
+    &::before {
+        @include icon-before-after;
+        width: 2px;
+        height: 8px;
+        top: 2px;
+        left: 8px;
+    }
+    &::after {
+        @include icon-before-after;
+        width: 8px;
+        height: 2px;
+        top: 8px;
+        left: 2px;
+    }
+}
+.note {
+    padding-left: 50px;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    &.light {
+        @extend %time-note-light-theme;
+    }
+    &.dark {
+        @extend %time-note-dark-theme;
+    }
+}
+.bold {
+    font-weight: 600;
+}

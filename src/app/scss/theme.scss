@@ -1,0 +1,59 @@
+@import './common.scss';
+%modal-dark-theme {
+    --title-color: #{$darkTextColor};
+    --background-color: #202428;
+}
+%modal-light-theme {
+    --title-color: #{$lightTextColor};
+    --background-color: #fffeff;
+}
+%modal-close-dark-theme {
+    --fore-color: #e2e8ec;
+    --background-color: #2b3238;
+}
+%modal-close-light-theme {
+    --fore-color: #{$lightTextColor};
+    --background-color: #f7fbfc;
+}
+%select-amount-dark-theme {
+    --text-color: #{$darkTextColor};
+    --border-color: #30373d;
+}
+%select-amount-light-theme {
+    --text-color: #{$lightTextColor};
+    --border-color: #e2e8ec;
+}
+%tip-dark-theme {
+    --background-color: #2b3238;
+    --text-color: #637180;
+}
+%transform-dark-theme {
+    --background-color: #{$darkBackgroundColor};
+}
+%transform-light-theme {
+    --background-color: #{$lightBackgroundColor};
+}
+%tip-light-theme {
+    --background-color: #edf3f8;
+    --text-color: #8794a1;
+}
+%tip-dark-theme {
+    --background-color: #2b3237;
+    --text-color: #637180;
+}
+%time-note-dark-theme {
+    --background-color: #141417;
+    --text-color: #dbe1e6;
+}
+%time-note-light-theme {
+    --background-color: #eef3f9;
+    --text-color: #2d3238;
+}
+%buttom-pramary-dark-theme {
+    --background-color: #ecf3f9;
+    --text-color: #1e2226;
+}
+%buttom-pramary-light-theme {
+    --background-color: #2b3136;
+    --text-color: #fff;
+}
